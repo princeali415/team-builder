@@ -26,7 +26,8 @@ const {values, update, submit} = props
                     placeholder='Enter Name'
                     maxLength='30'
                     value={values.name}
-                    onChange={update} 
+                    onChange={update}
+                    required 
                     />
                 </label>
                 <label>Email
@@ -37,10 +38,11 @@ const {values, update, submit} = props
                     maxLength='40'
                     value={values.email}
                     onChange={update}
+                    required
                     />
                 </label>
                 <label>Role
-                    <select name='role'value={values.role} onChange={update}>
+                    <select name='role'value={values.role} onChange={update} required>
                     <option value=''>------Select Role------</option>
                     <option value='backend engineer'></option>
                     <option value='frontend engineer'></option>

@@ -33,6 +33,7 @@ function App() {
     //create newTeamMember Object
     event.preventDefault();
     setTeam([...team, formValues])
+    setFormValues(initialFormValues)
   }
 
 
